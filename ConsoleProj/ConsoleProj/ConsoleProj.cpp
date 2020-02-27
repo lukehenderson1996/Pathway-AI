@@ -2,7 +2,7 @@
 // Pathway AI v0.3 //
 /////////////////////
 //0.3 changes
-//better log file, operation algorithms
+//better log file, operation algorithms, change comments on line 130 and DISP_DELAY to increase running speed significantly
 //
 const double VERSION = 0.3;
 
@@ -22,7 +22,7 @@ string logInit(int seed, int aiIter);
 void reasDir(int i, int j, int iChg, int jChg);
 void manpBoard();
 
-const int DISP_DELAY = 1;//1e8 medium speed
+const int DISP_DELAY = 1e8;//1e8 medium speed
 
 const int ATR_CONT = 0;
 const int ATR_CLSS = 1;
@@ -127,11 +127,12 @@ int main()
 	///////////////
 	while (1)
 	{
-		//display
+		//display fast
 		//if (loopCnt % 10 == 0)
 		//{
 		//	disp(ATR_CONT, seed, aiIter);
 		//}
+		//display slow
 		disp(ATR_CONT, seed, aiIter);
 		
 		
